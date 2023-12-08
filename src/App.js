@@ -1,23 +1,22 @@
-import logo from "./logo.svg";
+import { MenuBar } from "./components/MenuBar";
+import { Content } from "./Routes/Content";
 import "./App.css";
+import { Header } from "./components/Header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        // height: "100vh",
+      }}
+    >
+      {/* <Header /> */}
+      <div style={{ display: "flex", flexDirection: "row" }}>
+        <MenuBar />
+        <Content />
+      </div>
     </div>
   );
 }
