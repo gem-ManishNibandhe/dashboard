@@ -57,11 +57,10 @@ export const Analytics = () => {
         <div style={{ display: "flex" }}>
           <Select
             mode="tags"
-            style={{ width: "100%" }}
+            style={{ width: "200px" }}
             placeholder="filter by language"
             onChange={handleChange}
             options={uniqueLanguage}
-            style={{ width: "200px" }}
           />
           <div style={{ paddingLeft: "20px" }}>
             <Button type="primary">Submit</Button>

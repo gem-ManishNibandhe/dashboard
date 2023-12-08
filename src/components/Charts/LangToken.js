@@ -34,7 +34,8 @@ export const LangToken = (props) => {
     chart: {
       type: "line",
       height: 280,
-      width: window.innerWidth * 1,
+      width: 1250,
+      //   width: window.innerWidth * 1,
     },
     title: {
       text: "Language Token Input vs Language Token Output",
@@ -98,9 +99,5 @@ export const LangToken = (props) => {
       },
     ],
   };
-  return (
-    <div className="langchart">
-      <HighchartsReact highcharts={Highcharts} options={options} />;
-    </div>
-  );
+  return <HighchartsReact highcharts={Highcharts} options={options} />;
 };

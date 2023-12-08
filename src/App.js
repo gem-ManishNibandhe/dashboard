@@ -1,6 +1,5 @@
 import { MenuBar } from "./components/MenuBar";
 import { Content } from "./Routes/Content";
-import "./App.css";
 import "./index.css";
 import { Header } from "./components/Header";
 

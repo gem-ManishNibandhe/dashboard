@@ -3,40 +3,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  .highcharts-container {
-    width: 80%; /* Set a percentage-based width */
-    margin: 0 auto; /* Center the chart on larger screens */
-  }
-  .langchart {
-    display: "flex";
-    flex-wrap: wrap;
-  }
-  @media (max-width: 768px) {
-    .highcharts-container {
-      width: 100%;
-      margin: 0;
-      display: "flex";
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-  }
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-/* Apply styles for larger screens */
-.highcharts-container {
-  width: 80%; /* Set a percentage-based width */
-  margin: 0 auto; /* Center the chart on larger screens */
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .highcharts-container {
-    width: 100%; /* Full width on smaller screens */
-    margin: 0; /* Remove margin on smaller screens */
-  }
 }
