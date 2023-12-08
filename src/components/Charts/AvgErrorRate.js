@@ -5,7 +5,6 @@ import HighchartsReact from "highcharts-react-official";
 export const AvgErrorRate = (props) => {
   const [data, setdata] = useState();
   function calculateAverageErrorRateByLanguage(evaluations) {
-    // console.log(evaluations);
     // Create an object to store total error rates and counts for each language
     const languageErrorRates = {};
 
@@ -39,7 +38,7 @@ export const AvgErrorRate = (props) => {
     return averageErrorRateByLanguage;
   }
 
-  useEffect(() => {}, [props.value, props.filter]);
+  //   useEffect(() => {}, [props.value, props.filter]);
   // Call the function and log the result
   let averageErrorRates = null;
   if (props.value != null) {
@@ -61,9 +60,10 @@ export const AvgErrorRate = (props) => {
     chart: {
       type: "pie",
       height: 350,
+      width: 450,
     },
     title: {
-      text: "Average error rate per by language",
+      text: "Average error rate by language",
     },
     subtitle: {
       text: [],

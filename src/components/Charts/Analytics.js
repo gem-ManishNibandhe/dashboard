@@ -39,17 +39,19 @@ export const Analytics = () => {
         height: "100vh",
         overflow: "auto",
       }}
+      className="dashboard-section"
     >
       <div
         className="dashboard-filter"
         style={{
           height: "10vh",
-          backgroundColor: "#ffff92",
-          margin: "5px",
+          backgroundColor: "#ffffff",
+          margin: "7px",
           display: "flex",
           justifyContent: "flex-end",
           alignItems: "center",
           padding: "0px 200px 0px  200px",
+          borderRadius: "20px",
         }}
       >
         <div style={{ display: "flex" }}>
@@ -70,11 +72,12 @@ export const Analytics = () => {
         <div
           style={{
             width: "70%",
-            backgroundColor: "#f1ff92",
-            margin: "5px",
+            backgroundColor: "#ffffff",
+            margin: "7px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            borderRadius: "20px",
           }}
         >
           <InputOutputChar value={data} filter={filteredEvaluations} />
@@ -82,11 +85,12 @@ export const Analytics = () => {
         <div
           style={{
             width: "40%",
-            backgroundColor: "#d1ff92",
-            margin: "5px",
+            backgroundColor: "#ffffff",
+            margin: "7px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            borderRadius: "20px",
           }}
           id="ChartContainer2"
         >
@@ -97,11 +101,12 @@ export const Analytics = () => {
       <div
         style={{
           height: "40vh",
-          backgroundColor: "#ff9f92",
-          margin: "5px",
+          backgroundColor: "#ffffff",
+          margin: "7px",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          borderRadius: "20px",
         }}
       >
         {/* <h1>Language Model token</h1> */}

@@ -15,7 +15,7 @@ export const MenuBar = () => {
         }}
         defaultSelectedKeys={[window.location.pathname]}
         items={[
-          { label: "Home", key: "/", icon: <HomeOutlined /> },
+          // { label: "Home", key: "/", icon: <HomeOutlined /> },
           {
             label: "Dashboard",
             key: "/dashboard",

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../Charts/Charts.css";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
@@ -33,7 +34,7 @@ export const LangToken = (props) => {
     chart: {
       type: "line",
       height: 280,
-      width: 1300,
+      width: window.innerWidth * 1,
     },
     title: {
       text: "Language Token Input vs Language Token Output",
@@ -97,5 +98,9 @@ export const LangToken = (props) => {
       },
     ],
   };
-  return <HighchartsReact highcharts={Highcharts} options={options} />;
+  return (
+    <div className="langchart">
+      <HighchartsReact highcharts={Highcharts} options={options} />;
+    </div>
+  );
 };

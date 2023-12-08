@@ -2,3 +2,19 @@
   width: 100%;
   height: 100%;
 } */
+.highcharts-container {
+  width: 80%; /* Set a percentage-based width */
+  margin: 0 auto; /* Center the chart on larger screens */
+}
+.langchart {
+  display: "flex";
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .highcharts-container {
+    width: 100%;
+    margin: 0;
+    display: "flex";
+    flex-wrap: wrap;
+  }
+}

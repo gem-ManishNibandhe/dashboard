@@ -1,6 +1,7 @@
 import { MenuBar } from "./components/MenuBar";
 import { Content } from "./Routes/Content";
 import "./App.css";
+import "./index.css";
 import { Header } from "./components/Header";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       style={{
         display: "flex",
         flexDirection: "column",
+        backgroundColor: "#e5e1ed",
         // height: "100vh",
       }}
     >

@@ -22,7 +22,7 @@ export const InputOutputChar = (props) => {
     chart: {
       type: "column",
       height: 350,
-      width: 750,
+      width: 800,
     },
     title: {
       text: "Speech Input/Output Characters",
