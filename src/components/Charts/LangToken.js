@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../Charts/Charts.css";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 

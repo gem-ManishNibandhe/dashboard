@@ -1,0 +1,41 @@
+.dashboard-section {
+  height: 100vh;
+  overflow: auto;
+}
+.dashboard-filter {
+  height: 10vh;
+  background-color: #ffffff;
+  margin: 7px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 200px 0 200px;
+  border-radius: 20px;
+}
+.io-chart {
+  width: 70%;
+  background-color: #ffffff;
+  margin: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.avg-error-chart-section {
+  width: 40%;
+  background-color: #ffffff;
+  margin: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.lan-token-chart-section {
+  height: 40vh;
+  background-color: #ffffff;
+  margin: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}

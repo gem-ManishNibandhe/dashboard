@@ -1,0 +1,6 @@
+.main-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e1ed;
+  height: 100vh;
+}

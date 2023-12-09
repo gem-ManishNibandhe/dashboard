@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { AvgErrorRate } from "./AvgErrorRate";
 import { Button, Flex, Select } from "antd";
 import data from "../../Data/mock_data.json";
-import "../Charts/Charts.css";
+import "../Charts/Styles/Charts.css";
 import { InputOutputChar } from "./InputOutputChar";
 import { LangToken } from "./LangToken";
 
@@ -34,26 +34,8 @@ export const Analytics = () => {
   useEffect(() => {}, [filteredEvaluations]);
 
   return (
-    <div
-      style={{
-        height: "100vh",
-        overflow: "auto",
-      }}
-      className="dashboard-section"
-    >
-      <div
-        className="dashboard-filter"
-        style={{
-          height: "10vh",
-          backgroundColor: "#ffffff",
-          margin: "7px",
-          display: "flex",
-          justifyContent: "flex-end",
-          alignItems: "center",
-          padding: "0px 200px 0px  200px",
-          borderRadius: "20px",
-        }}
-      >
+    <div className="dashboard-section">
+      <div className="dashboard-filter">
         <div style={{ display: "flex" }}>
           <Select
             mode="tags"
@@ -68,47 +50,14 @@ export const Analytics = () => {
         </div>
       </div>
       <div style={{ display: "flex", height: "50vh" }}>
-        <div
-          style={{
-            width: "70%",
-            backgroundColor: "#ffffff",
-            margin: "7px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            borderRadius: "20px",
-          }}
-        >
+        <div className="io-chart">
           <InputOutputChar value={data} filter={filteredEvaluations} />
         </div>
-        <div
-          style={{
-            width: "40%",
-            backgroundColor: "#ffffff",
-            margin: "7px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            borderRadius: "20px",
-          }}
-          id="ChartContainer2"
-        >
-          {/* <h1>Error percentage rate (Pie Charts)</h1> */}
+        <div className="avg-error-chart-section">
           <AvgErrorRate value={data} filter={filteredEvaluations} />
         </div>
       </div>
-      <div
-        style={{
-          height: "40vh",
-          backgroundColor: "#ffffff",
-          margin: "7px",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          borderRadius: "20px",
-        }}
-      >
-        {/* <h1>Language Model token</h1> */}
+      <div className="lan-token-chart-section">
         <LangToken value={data} filter={filteredEvaluations} />
       </div>
     </div>
